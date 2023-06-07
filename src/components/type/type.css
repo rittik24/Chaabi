@@ -1,0 +1,66 @@
+body{
+    background: skyblue;
+}
+.keyboard{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(5,40px);
+    margin: auto;
+    margin-top: 20px;
+    background: rgb(59, 177, 246);
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+
+}
+.keyboard>div:hover{
+    background-color: rgb(198, 242, 128);
+}
+.keyboard>div{
+    background-color: rgb(164, 165, 159);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(49, 50, 49);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.enter{
+    grid-area: 3/13/4/span 2;
+}
+.Benter{
+    grid-area: 5/10/5/span 2;
+}
+.space{
+    grid-column: 5/span 4;
+}
+.rshift{
+    grid-column: 12/span 2;
+}
+.inputBox{
+    width: 85%;
+    height: 30px;
+   margin-top: 5px;
+   text-align: center;
+}
+button{
+    margin-top: 10px;
+    width: 10%;
+    height: 30px;
+    cursor: pointer;
+    background-color:coral;
+    border: none;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
